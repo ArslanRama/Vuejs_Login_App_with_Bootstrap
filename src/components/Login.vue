@@ -6,7 +6,7 @@
       <div class="card">
         <div class="login-box">
           <div class="login-snip">
-               <h2 class="text-uppercase">My Mill</h2>
+            <h2 class="text-uppercase">My Mill</h2>
             <input
               id="tab-1"
               type="radio"
@@ -54,10 +54,12 @@
                   </div>
                 </div>
                 <div class="group">
-                    <br> <br>
-                  <input id="check" type="checkbox" class="check"  />
+                  <br />
+                  <br />
+                  <input id="check" type="checkbox" class="check" />
                   <label for="check"
-                    ><span class="icon"></span> I agree to the <a href="#">Terms and Conditions</a></label
+                    ><span class="icon"></span> I agree to the
+                    <a href="#">Terms and Conditions</a></label
                   >
                 </div>
                 <!-- Reset Password -->
@@ -66,7 +68,13 @@
                 </div>
                 <div class="hr"></div>
                 <div class="foot">
-                  <div class="foot">Forgot Password? <a href="#"> <u>Recover here</u>  <i class="fa fa-lock" aria-hidden="true"></i></a></div>
+                  <div class="foot">
+                    Forgot Password?
+                    <a href="#">
+                      <u>Recover here</u>
+                      <i class="fa fa-lock" aria-hidden="true"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
               <!--This part is extra! Sign up Form-->
@@ -114,7 +122,7 @@
                 </div>
                 <div class="hr"></div>
                 <div class="foot">
-                  <label for="tab-1">Already Member?</label>
+                  <label for="tab-1"><a href="">Already Member?</a> </label>
                 </div>
               </div>
             </div>
@@ -128,7 +136,7 @@
 <script>
 export default {
   data() {
-      // simple function to toggle password
+    // simple function to toggle password
     return {
       showPassword: false,
     };
