@@ -1,10 +1,8 @@
-//! Creating a user login UI
-/* It contains some strong web development fundamentals such as creating HTML forms, routing to navigate to some other screen, and two-way data-binding to extract the data from the login form. */
-
+ //! //! Creating a user login UI
 <template>
   <div class="row">
     <div class="col-md-6 mx-auto p-0">
-      <!-- My login and sign up card -->
+      <!-- Login and Sign up Card-->
       <div class="card">
         <div class="login-box">
           <div class="login-snip">
@@ -21,7 +19,7 @@
               class="tab"
               >Sign Up</label
             >
-            <!-- Login Part -->
+            <!-- Login Form -->
             <div class="login-space">
               <div class="login">
                 <div class="group">
@@ -33,7 +31,7 @@
                     placeholder="Enter your email address"
                   />
                 </div>
-                <!-- PASSWORD -->
+                <!-- Hide/Show Password -->
                 <div class="group">
                   <label for="pass" class="label">Password</label>
                   <input
@@ -71,7 +69,7 @@
                   <div class="foot">Forgot Password? <a href="#"> <u>Recover here</u>  <i class="fa fa-lock" aria-hidden="true"></i></a></div>
                 </div>
               </div>
-              <!-- Sign up Part -->
+              <!--This part is extra! Sign up Form-->
               <div class="sign-up-form">
                 <div class="group">
                   <label for="user" class="label">Username</label>
@@ -130,6 +128,7 @@
 <script>
 export default {
   data() {
+      // simple function to toggle password
     return {
       showPassword: false,
     };
