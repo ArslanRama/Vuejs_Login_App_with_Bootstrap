@@ -24,28 +24,41 @@
             <div class="login-space">
               <div class="login">
                 <div class="group">
-                  <label for="email" class="label">Email</label>
+                  <label for="email" class="label">E-mail</label>
                   <input
                     id="email"
                     type="text"
                     class="input"
-                    placeholder="Enter your email"
+                    placeholder="Enter your email address"
                   />
                 </div>
+                <!-- PASSWORD -->
                 <div class="group">
                   <label for="pass" class="label">Password</label>
                   <input
+                    v-bind:type="[showPassword ? 'text' : 'password']"
                     id="pass"
-                    type="password"
                     class="input"
-                    data-type="password"
                     placeholder="Enter your password"
-                  /> 
+                  />
+                  <div class="input-group-append">
+                    <p
+                      class="input-group-text"
+                      @click="showPassword = !showPassword"
+                    >
+                      <i
+                        class="fa"
+                        :class="[showPassword ? 'fa-eye' : 'fa-eye-slash']"
+                        aria-hidden="true"
+                      ></i>
+                    </p>
+                  </div>
                 </div>
                 <div class="group">
-                  <input id="check" type="checkbox" class="check" checked />
+                    <br> <br>
+                  <input id="check" type="checkbox" class="check"  />
                   <label for="check"
-                    ><span class="icon"></span> Keep me signed in</label
+                    ><span class="icon"></span> I agree to the <a href="#">Terms and Conditions</a></label
                   >
                 </div>
                 <div class="group">
@@ -88,7 +101,7 @@
                   />
                 </div>
                 <div class="group">
-                  <label for="pass" class="label">Email Address</label>
+                  <label for="pass" class="label">E-mail </label>
                   <input
                     id="pass"
                     type="text"
@@ -116,7 +129,7 @@
 export default {
   data() {
     return {
-      password: "",
+      showPassword: false,
     };
   },
 };
