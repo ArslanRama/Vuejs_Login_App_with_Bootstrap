@@ -1,4 +1,4 @@
- //! //! Creating a user login UI
+/* Creating a user login UI */
 <template>
   <div class="row">
     <div class="col-md-6 mx-auto p-0">
@@ -32,6 +32,10 @@
                   />
                 </div>
                 <!-- Hide/Show Password -->
+                <!-- How it Works? -->
+                <!-- When the user clicks on the icon, we toggle the boolean value showPassword @click="showPassword = !showPassword"
+                We change the type of input field to text if showPassword is set to true.
+                We also change the class binding of icon to fa-eye if showPassword is set to true. -->
                 <div class="group">
                   <label for="pass" class="label">Password</label>
                   <input
@@ -39,19 +43,14 @@
                     id="pass"
                     class="input"
                     placeholder="Enter your password"
-                  />
-                  <div class="input-group-append">
-                    <p
-                      class="input-group-text"
-                      @click="showPassword = !showPassword"
-                    >
+                  /><p @click="showPassword = !showPassword">
                       <i
                         class="fa"
                         :class="[showPassword ? 'fa-eye' : 'fa-eye-slash']"
                         aria-hidden="true"
                       ></i>
                     </p>
-                  </div>
+                    
                 </div>
                 <div class="group">
                   <br />
@@ -71,7 +70,7 @@
                   <div class="foot">
                     Forgot Password?
                     <a href="#">
-                      <u>Recover here</u>
+                      <u> Recover here </u>
                       <i class="fa fa-lock" aria-hidden="true"></i
                     ></a>
                   </div>
