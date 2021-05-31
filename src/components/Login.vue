@@ -38,20 +38,20 @@
                 We also change the class binding of icon to fa-eye if showPassword is set to true. -->
                 <div class="group">
                   <label for="pass" class="label">Password</label>
-                  <input
+                     <input
                     v-bind:type="[showPassword ? 'text' : 'password']"
                     id="pass"
                     class="input"
                     placeholder="Enter your password"
                   /><p @click="showPassword = !showPassword">
-                      <i
+                      <span
                         class="fa"
                         :class="[showPassword ? 'fa-eye' : 'fa-eye-slash']"
                         aria-hidden="true"
-                      ></i>
-                    </p>
-                    
+                      ></span>
+                    </p>                    
                 </div>
+                
                 <div class="group">
                   <br />
                   <br />
