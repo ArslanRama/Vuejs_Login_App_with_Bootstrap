@@ -45,7 +45,7 @@
                     placeholder="Enter your password"
                   /><p @click="showPassword = !showPassword">
                       <span
-                        class="fa"
+                        class="fa eye"
                         :class="[showPassword ? 'fa-eye' : 'fa-eye-slash']"
                         aria-hidden="true"
                       ></span>

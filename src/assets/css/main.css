@@ -106,16 +106,13 @@ body {
   background: rgba(54, 48, 48, 0.1);
 }
 
-
+/* Toggle visibity */
 .eye {
-  display: flex;
-  margin-right: -30px;
-  padding-right: 35px;
-  
-
-  /* position: absolute;
-  top: 130px;
-  left: 330px; */
+  float: right;
+  margin-right: 10px;
+  margin-top: -30px;
+  position: relative;
+  color: #000aaa;
 }
 
 .login-space .group input[data-type="password"] {
