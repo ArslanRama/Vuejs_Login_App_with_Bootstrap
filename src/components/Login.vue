@@ -4,7 +4,7 @@
 <template>
   <div class="row">
     <div class="col-md-6 mx-auto p-0">
-        <!-- My login and sign up card -->
+      <!-- My login and sign up card -->
       <div class="card">
         <div class="login-box">
           <div class="login-snip">
@@ -40,7 +40,7 @@
                     class="input"
                     data-type="password"
                     placeholder="Enter your password"
-                  />
+                  /> 
                 </div>
                 <div class="group">
                   <input id="check" type="checkbox" class="check" checked />
@@ -53,7 +53,7 @@
                 </div>
                 <div class="hr"></div>
                 <div class="foot">
-                  <div class="foot"> <a href="#">Forgot Password?</a> </div>
+                  <div class="foot"><a href="#">Forgot Password?</a></div>
                 </div>
               </div>
               <!-- Sign up Part -->
@@ -115,7 +115,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      password: "",
+    };
   },
 };
 </script>
