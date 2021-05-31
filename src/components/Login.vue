@@ -8,6 +8,7 @@
       <div class="card">
         <div class="login-box">
           <div class="login-snip">
+               <h2 class="text-uppercase">My Mill</h2>
             <input
               id="tab-1"
               type="radio"
@@ -61,12 +62,13 @@
                     ><span class="icon"></span> I agree to the <a href="#">Terms and Conditions</a></label
                   >
                 </div>
+                <!-- Reset Password -->
                 <div class="group">
                   <input type="submit" class="button" value="Log In" />
                 </div>
                 <div class="hr"></div>
                 <div class="foot">
-                  <div class="foot"><a href="#">Forgot Password?</a></div>
+                  <div class="foot">Forgot Password? <a href="#"> <u>Recover here</u>  <i class="fa fa-lock" aria-hidden="true"></i></a></div>
                 </div>
               </div>
               <!-- Sign up Part -->

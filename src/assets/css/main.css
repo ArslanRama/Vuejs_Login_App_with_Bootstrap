@@ -1,17 +1,24 @@
 body {
   margin: 0;
+  box-sizing: border-box;
+  width: 100%;
   color: #95969c;
   background: #c8c8c8;
   font: 600 16px/18px 'Open Sans', sans-serif;
-  background: url(https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80)  no-repeat center;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
+  background: url(https://images.pexels.com/photos/374720/pexels-photo-374720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
+/* Card Box */
 .login-box {
   width: 100%;
-  margin: auto;
+  height: 100%;
+  margin: auto ;
   max-width: 525px;
-  min-height: 670px;
+  min-height: 580px;
   position: relative;
   background: url(https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80) no-repeat center;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
@@ -21,7 +28,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  padding: 90px 70px 50px 70px;
+  padding: 30px 70px 50px 70px;
   background: rgba(235, 236, 236, 0.918)
 }
 
@@ -49,13 +56,21 @@ body {
   text-transform: uppercase
 }
 
+
+/* My Mill */
+.tab {
+  padding: 15px;
+  font: bold;
+}
+/* Login */
 .login-snip .tab {
-  font-size: 22px;
+  font-size: 20px;
   margin-right: 15px;
   padding-bottom: 5px;
   margin: 0 15px 10px 0;
   display: inline-block;
-  border-bottom: 2px solid transparent
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
 }
 
 .login-snip .sign-in:checked+.tab,
@@ -103,6 +118,9 @@ body {
 
 .login-space .group .button {
   background: #0e54cc
+}
+.login-space .group .button:hover {
+  background: #049b84d0
 }
 
 .login-space .group label .icon {
@@ -185,7 +203,7 @@ a {
 
 .hr {
   height: 2px;
-  margin: 60px 0 50px 0;
+  margin: 10px 0 10px 0;
   background: #0000aa
 }
 
@@ -195,9 +213,17 @@ a {
 
 .card {
   width: 500px;
-  left: 100px
+  margin: auto;
+  margin-top:70px;
+  
 }
 
 ::placeholder {
   color: #383838
+}
+
+/* Title */
+
+.text-uppercase {
+  color: #0000aa;
 }
