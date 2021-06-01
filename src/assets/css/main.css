@@ -1,14 +1,19 @@
+*,
+:after,
+:before {
+  box-sizing: border-box
+}
+
 body {
   margin: 0;
-  box-sizing: border-box;
   width: 100%;
   color: #95969c;
   background: #c8c8c8;
   font: 600 16px/18px 'Open Sans', sans-serif;
-  background: url(https://images.pexels.com/photos/374720/pexels-photo-374720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/374720/pexels-photo-374720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: center;
+  background-image: no-repeat;
+  background-image: cover;
   position: relative;
 }
 
@@ -186,12 +191,6 @@ body {
 
 .login-snip .sign-up:checked+.tab+.login-space .sign-up-form {
   transform: rotate(0)
-}
-
-*,
-:after,
-:before {
-  box-sizing: border-box
 }
 
 .clearfix:after,
