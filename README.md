@@ -3,6 +3,13 @@
 # Requirements
 1. Vue.js
 2. Node.js
+   
+# Workflow
+- Using the Vue CLI
+- Creating reusable components
+- Setting up routing with Vue Router
+- Styling with Bootstrap and Css
+
 
 
 [Click for the demo](https://vuejs-login-app-with-bootstrap.netlify.app/)
