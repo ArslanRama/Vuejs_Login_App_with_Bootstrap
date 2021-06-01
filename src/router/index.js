@@ -3,7 +3,8 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-// These routers will allow us to navigate from one page to another page.
+// routes will allow us to navigate from one page to another. 
+// but in our case we have just one router. 
   const routes = [
   {
     path: '/',
